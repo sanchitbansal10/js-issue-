@@ -1,0 +1,11 @@
+{
+  "name": "js-organizer",
+  "version": "1.0.0",
+  "description": "Topic/resource url",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "edgar212",
+  "license": "ISC"
+}
