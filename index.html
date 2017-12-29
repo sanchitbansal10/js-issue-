@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script type="text/javascript" src="./topics.js"></script>
     <script type="text/javascript" src="./urls.js"></script>
     <script type="text/javascript" src="./app.js"></script>
@@ -20,7 +20,13 @@
     <div>
         <input type="text" id="inputUrl" placeholder="Add the Article URL">
         <div id='showTopicList'></div>
+        <button id='showTopicButton'>Show topics</button>
         <button id='inputUrlButton'>Add Url</button>
+    </div>
+    <div>
+        <input type="search" placeholder='enter the topic' name ='for Topic search'id="topicSearch">
+        <div id="topicList"></div> 
+        <div id="urlList"></div>
     </div>
 </body>
 
