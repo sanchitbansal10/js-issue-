@@ -6,27 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <script type="text/javascript" src="./topics.js"></script>
     <script type="text/javascript" src="./urls.js"></script>
     <script type="text/javascript" src="./app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div>
-        <input type="text" id="inputTopic" placeholder="Add a newTopic">
-        <button id='inputTopicButton'>Add Topic</button>
-    </div>
-    <div>
-        <input type="text" id="inputUrl" placeholder="Add the Article URL">
-        <div id='showTopicList'></div>
-        <button id='showTopicButton'>Show topics</button>
-        <button id='inputUrlButton'>Add Url</button>
-    </div>
-    <div>
-        <input type="search" placeholder='enter the topic' name ='for Topic search'id="topicSearch">
-        <div id="topicList"></div> 
-        <div id="urlList"></div>
+    <div class="container">
+        <header>
+            <div class="h1 text-center">JS ORGANIZER
+                <sub>BY SANCHIT BANSAL</sub>
+            </div>
+
+            <hr>
+        </header>
+
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#inputTopicShit" aria-expanded="false">
+            Add a new topic
+        </button>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#inputUrlShit" aria-expanded="false">
+            Add a new Url
+        </button>
+        <div id='inputTopicShit' class='inputTopic collapse'>
+            <input type="text" id="inputTopic" placeholder="Add a newTopic">
+            <button id='inputTopicButton'>Add Topic</button>
+        </div>
+        <div id='inputUrlShit' class='inputUrl collapse'>
+            <input type="text" id="inputUrl" placeholder="Add the Article URL">
+            <div id='showTopicList'></div>
+            <button id='showTopicButton'>Show topics</button>
+            <button id='inputUrlButton'>Add Url</button>
+        </div>
+        <div class='lookupDirectory'>
+            <input type="search" placeholder='enter the topic' name='for Topic search' id="topicSearch">
+            <div id="topicList"></div>
+            <div id="urlList"></div>
+        </div>
+
     </div>
 </body>
 
